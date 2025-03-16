@@ -9,22 +9,20 @@
 header{
   background-color:rgba(217, 209, 209, 0.1);
   position: absolute;
-  margin: 0 auto;
-  width:100%;
-  z-index: 100;
+  width:100vw;
+  z-index: 111;
 
 }
 .container{
   max-width: 1110px;
   margin: 0 auto;
-  margin-block:10px ;
 }
 .navigation{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   height: 5rem;
+  width: 100%;
 
 }
 .logo a{
@@ -45,7 +43,7 @@ header{
 }
 
 .menu ul li {
-  margin-right: 30px;
+  padding-right: 30px;
   list-style: none;
 }
 .menu ul li a {
@@ -64,13 +62,15 @@ header{
   padding: 0.8rem;
 }
 .hero-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 90vh;
-  position: relative;
+ 
 }
 .hero-content h4{
   color: #ffffff;
@@ -80,7 +80,7 @@ header{
 .hero-content h1{
   color: #ee664e;
 
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: capitalize;
 }
 .hero-content h1 span{
@@ -93,13 +93,103 @@ header{
   padding: 1rem 2rem;
   font-size: 1rem;
 }
+
 .hero{
-  width: 90%;
+  width: 100vw;
 }
+
 #myVideo{
-  min-width: 100%;
-  height: 98vh;
-  position: absolute;
-  left: 0;
+  width: 100%;
+  height: 100vh;
   object-fit: cover;
+}
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .hamburger{
+    display: block !important;;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #000000;
+  }
+ .hamburger i[data-visible = "true"]{
+     display: none;
+ }
+ .hamburger i[data-visible = "false"]{
+     display: block;
+ }
+  header{
+    width: 100%;
+    background-color: white;
+  }
+  .navigation{
+    display: block;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding-top:15px;
+    }
+  
+  .navigation .logo h1{
+    color: black;
+    text-align: center;
+  } 
+  .menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+
+  }
+  .menu{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    transform: translatex(0%);
+  }
+  .menu[data-visible="true"]{
+    transform: translatex(-200%);
+    
+  }
+  .menu ul li{
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+    border-top: 2px solid rgba(0, 0, 0,0.3);
+
+  }
+  .menu ul li a{
+    color:rgb(0, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+  }
+  .menu ul li button{
+    width: 106%;
+
+  }
+
+ .hero-content{
+  width: 100%;
+  text-align: center;
+ }
+ 
+ #myVideo{
+    width: 100%;
+    height: 110vh;
+ }
+ .hero-content{
+     margin-top: 60px;
+     font-size: 0.5rem;
+ }
 }
