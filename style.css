@@ -14,15 +14,14 @@ header{
 
 }
 .container{
-  max-width: 1110px;
-  margin: 0 auto;
+    width: min(90%, 1120px);
+    margin-inline: auto;
 }
 .navigation{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  width: 100%;
 
 }
 .logo a{
@@ -106,8 +105,72 @@ header{
 .hamburger{
   display: none;
 }
+.program-head{
+  align-items: center;
+  margin:140px auto 50px auto;
+  text-align: center;
+}
+
+.program-head h1{
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #151515;
+  padding-bottom: 17px;
+}
+.program-head h1 span{
+  color: #ee664e;
+}
+
+.program-head p{
+  font-size: 1rem;
+  color: rgba(8, 8, 8, 0.5);
+}
+.leftandright{
+ display: grid; 
+ grid-template-columns: repeat(2,1fr);
+}
+
+.program-cont{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+
+}
+.img{
+  width: 100%;
+}
+.program-cont img{
+ text-align: center;
+ width: 20%;
+ height: 20%;
+ justify-content: center;
+}
+.program-inner{
+  padding-left: 25px;
+}
+
+.program-inner h3{
+  font-size: 1.5rem;
+  color: #151515;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.program-inner p{
+  font-size: 1rem;
+  color: rgba(8, 8, 8, 0.5);
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+.program-inner a{
+  color: #ed583e;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
 
 @media (max-width: 768px){
+  
   .hamburger{
     display: block !important;;
     cursor: pointer;
@@ -192,4 +255,10 @@ header{
      margin-top: 60px;
      font-size: 0.5rem;
  }
+ .leftandright{
+  display: block;
+ }
+ /* .program-cont{
+  display: block;
+ } */
 }
