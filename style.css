@@ -453,7 +453,7 @@ form input, form textarea{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 20%;
+  width: 20vw;
   font-size: 1.2rem;
 }
 
@@ -584,5 +584,8 @@ form input[type="submit"]:hover{
   .form{
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .footer{
+    margin-top: 8rem;
   }
 }
