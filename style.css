@@ -485,12 +485,7 @@ form input[type="submit"]:hover{
     font-weight: 100;
     color: #000000;
   }
- .hamburger i[data-visible = "true"]{
-     display: none;
- }
- .hamburger i[data-visible = "false"]{
-     display: block;
- }
+ 
   header{
     width: 99%;
     background-color: white;
@@ -524,11 +519,19 @@ form input[type="submit"]:hover{
     width: 80%;
     margin: 20px auto;
     transform: translatex(0%);
+    /* transition: transform 350ms ease-in-out; */
+
   }
-  .menu[data-visible="true"]{
+  .menu[data-visible="false"]{
     transform: translatex(-200%);
     
   }
+  .hamburger i[data-visible = "true"]{
+    display: block !important;
+}
+.hamburger i[data-visible = "false"]{
+    display: none !important;
+}
   .menu ul li{
     width: 99%;
     text-align: center;
