@@ -95,6 +95,7 @@ header{
 
 .hero{
   width: 100vw;
+  background: linear-gradient(90deg, rgb(52, 49, 92) 0%, rgba(79, 79, 103, 0.732) 35%, rgb(49, 46, 88) 100%);
 
 }
 
@@ -554,6 +555,7 @@ form input[type="submit"]:hover{
  .hero-content{
   width: 100%;
   text-align: center;
+
  }
  
  .hero-content{
