@@ -26,7 +26,7 @@ header{
 }
 .logo a{
   text-decoration: none;
-  color: white;
+  color: #ece6e6;
 }
 .logo span{
   color: #ee664e;
@@ -46,7 +46,7 @@ header{
   list-style: none;
 }
 .menu ul li a {
-  color: #ffffff;
+  color: #ece6e6;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -57,7 +57,7 @@ header{
 .menu ul li button{
   border: none;
   background-color: #ee664e;
-  color: #ffffff;
+  color: #ece6e6;
   padding: 0.8rem;
 }
 .hero-content{
@@ -72,7 +72,7 @@ header{
  
 }
 .hero-content h4{
-  color: #ffffff;
+  color: #ece6e6;
   font-size: 2rem;
   margin-bottom: 30px;
 }
@@ -83,18 +83,19 @@ header{
   text-transform: capitalize;
 }
 .hero-content h1 span{
-  color: #fafafa;
+  color: #ece6e6;
 }
 .hero-content button{
   border: none;
   background-color: #ee664e;
-  color: #ffffff;
+  color: #ece6e6;
   padding: 1rem 2rem;
   font-size: 1rem;
 }
 
 .hero{
   width: 100vw;
+
 }
 
 #myVideo{
@@ -102,6 +103,7 @@ header{
   height: 100vh;
   object-fit: cover;
 }
+
 .hamburger{
   display: none;
 }
