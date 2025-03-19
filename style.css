@@ -555,10 +555,6 @@ form input[type="submit"]:hover{
   text-align: center;
  }
  
- #myVideo{
-    width: 99%;
-    height: 110vh;
- }
  .hero-content{
      margin-top: 60px;
      font-size: 0.5rem;
